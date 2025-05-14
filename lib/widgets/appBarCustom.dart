@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/changeNotifiyer/cartNotifier.dart';
+import 'package:flutter_form_remake/changeNotifier/cartNotifier.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:flutter_form_remake/constant/Constant.dart';
 
 import 'package:provider/provider.dart';
 
 AppBar appBar(GlobalKey<ScaffoldState>? _drawerKey, BuildContext context) {
   return AppBar(
+    backgroundColor: primaryColor,
+    centerTitle: true,
     title: Text(
       'Discover',
       style: TextStyle(color: Colors.white),
+      textAlign: TextAlign.center,
     ),
-    backgroundColor: Color(0xFF1d2d44),
-    centerTitle: true,
     leading: IconButton(
       icon: Icon(
         Icons.menu,

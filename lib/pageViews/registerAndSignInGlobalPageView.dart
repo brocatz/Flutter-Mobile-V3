@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/changeNotifiyer/formNotifier.dart';
-import 'package:flutter_form_remake/pageView/register_screen.dart';
-import 'package:flutter_form_remake/pageView/register_screenPart2.dart';
-import 'package:flutter_form_remake/pageView/signIn_screen.dart';
+import 'package:flutter_form_remake/changeNotifier/formNotifier.dart';
+import 'package:flutter_form_remake/pageViews/register_screen.dart';
+import 'package:flutter_form_remake/pageViews/register_screenPart2.dart';
+import 'package:flutter_form_remake/pageViews/signIn_screen.dart';
 import 'package:provider/provider.dart';
 // import 'package:flutter_form/changeNotifier/formNotifier.dart';
 // import 'package:flutter_form/pageViews/register_screen.dart';

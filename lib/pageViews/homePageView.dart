@@ -149,7 +149,6 @@ class _HomePageViewSate extends State<HomePageView> {
             //         child: AdWidget(ad: _bannerAd!),
             //       )
             //     :
-            Text("")
           ],
         ),
       ),

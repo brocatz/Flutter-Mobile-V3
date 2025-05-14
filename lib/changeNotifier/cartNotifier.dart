@@ -2,7 +2,7 @@ import 'dart:collection';
 
 import 'package:flutter/cupertino.dart';
 
-import 'package:flutter_form_remake/model/RestaurantMenuItemModel.dart';
+import 'package:flutter_form_remake/models/RestaurantMenuItemModel.dart';
 
 class CartNotifier with ChangeNotifier {
   final int minNumberOfSpecifiqueCartItem = 1;
@@ -12,7 +12,7 @@ class CartNotifier with ChangeNotifier {
   int? _totalNumberOfSelectedItems = 0;
   bool _showBagdeNotification = false; // False at first
   // then when we start to add items to cart show
-  LinkedHashMap<RestaurantMenuItemModel, int> _mapRestaurentMenuItems =
+  final LinkedHashMap<RestaurantMenuItemModel, int> _mapRestaurentMenuItems =
       new LinkedHashMap();
 
   // To initialise the iterable use the void setIterable()

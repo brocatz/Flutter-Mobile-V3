@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_form_remake/changeNotifiyer/cartNotifier.dart';
-import 'package:flutter_form_remake/changeNotifiyer/formNotifier.dart';
-import 'package:flutter_form_remake/pageView/registerAndSignInGlobalPageView.dart';
-import 'package:flutter_form_remake/pageView/signIn_screen.dart';
+import 'package:flutter_form_remake/changeNotifier/cartNotifier.dart';
+import 'package:flutter_form_remake/changeNotifier/formNotifier.dart';
+import 'package:flutter_form_remake/pageViews/registerAndSignInGlobalPageView.dart';
+import 'package:flutter_form_remake/pageViews/signIn_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
