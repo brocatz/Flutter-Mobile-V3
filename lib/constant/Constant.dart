@@ -7,6 +7,7 @@ const Color backgroundColor = Color.fromRGBO(32, 32, 32, .5); // black
 const Color formButtonColor = Color.fromRGBO(144, 190, 109, 1); // Ligth Green
 const Color discoverMenuItemBackgroundColor =
     Color.fromRGBO(248, 237, 235, 0.5);
+const Color warningColor = Color(0xFFbd1f36);
 
 const Color cartTitleColor = Color(0xFFf1dca7);
 

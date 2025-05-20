@@ -1,7 +1,7 @@
 // import 'package:firebase_auth/firebase_auth.dart';
 import "package:flutter/material.dart";
-import 'package:flutter_form_remake/constant/Constant.dart';
-import 'package:flutter_form_remake/widgets/errorCustomRegistrationAnimation.dart';
+import 'package:flutter_form_remake/constant/constant.dart';
+import 'package:flutter_form_remake/widgets/error_custom_registration_animation.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 class RegisterFormPart2 extends StatefulWidget {
@@ -42,15 +42,8 @@ class _RegisterFormPart2State extends State<RegisterFormPart2> {
         child: ListView(
           shrinkWrap: true,
           children: <Widget>[
-            // SizedBox(height: 60),
-            Container(
-              height: 50,
-              child: Text(
-                'Register',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-            ),
+            SizedBox(height: 50),
+            _buildFormTitle(),
             SizedBox(height: 15),
             _buildUserName(),
             buildCustomErrorWidgetOfType(userNameError, _isUserNameErrorActive),
@@ -69,6 +62,14 @@ class _RegisterFormPart2State extends State<RegisterFormPart2> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildFormTitle() {
+    return Text(
+      'Register',
+      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      textAlign: TextAlign.center,
     );
   }
 
@@ -168,12 +169,13 @@ class _RegisterFormPart2State extends State<RegisterFormPart2> {
         // save the value
         password = value;
       },
-      toolbarOptions: ToolbarOptions(
-        copy: false,
-        paste: false,
-        selectAll: false,
-        cut: false,
-      ),
+      enableInteractiveSelection: false,
+      // toolbarOptions: ToolbarOptions(
+      //   copy: false,
+      //   paste: false,
+      //   selectAll: false,
+      //   cut: false,
+      // ),
     );
   }
 
@@ -227,12 +229,13 @@ class _RegisterFormPart2State extends State<RegisterFormPart2> {
       onSaved: (value) {
         confirmPassword = value;
       },
-      toolbarOptions: ToolbarOptions(
-        copy: false,
-        paste: false,
-        cut: false,
-        selectAll: false,
-      ),
+      enableInteractiveSelection: false,
+      // toolbarOptions: ToolbarOptions(
+      //   copy: false,
+      //   paste: false,
+      //   cut: false,
+      //   selectAll: false,
+      // ),
     );
   }
 

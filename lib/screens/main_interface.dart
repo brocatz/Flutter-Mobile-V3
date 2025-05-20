@@ -1,11 +1,11 @@
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/changeNotifier/pageViewChangeNotifier.dart';
-import 'package:flutter_form_remake/pageViews/homePageView.dart';
-import 'package:flutter_form_remake/pageViews/orderPageView.dart';
-import 'package:flutter_form_remake/pageViews/searchPageView.dart';
-import 'package:flutter_form_remake/widgets/appBarCustom.dart';
-import 'package:flutter_form_remake/widgets/bottomNavigationBar.dart';
+import 'package:flutter_form_remake/changeNotifier/page_view_change_notifier.dart';
+import 'package:flutter_form_remake/pageViews/home_page_view.dart';
+import 'package:flutter_form_remake/pageViews/order_page_view.dart';
+import 'package:flutter_form_remake/pageViews/search_page_view.dart';
+import 'package:flutter_form_remake/widgets/appbar_custom.dart';
+import 'package:flutter_form_remake/widgets/bottom_navigation_bar.dart';
 import 'package:flutter_form_remake/widgets/drawer.dart';
 // import 'package:flutter_form/changeNotifier/pageViewChangeNotifier.dart';
 // import 'package:flutter_form/models/UserModel.dart';

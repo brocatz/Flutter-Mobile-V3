@@ -2,7 +2,7 @@ import 'dart:collection';
 
 import 'package:flutter/cupertino.dart';
 
-import 'package:flutter_form_remake/models/RestaurantMenuItemModel.dart';
+import 'package:flutter_form_remake/models/restaurantMenuItemModel.dart';
 
 class CartNotifier with ChangeNotifier {
   final int minNumberOfSpecifiqueCartItem = 1;

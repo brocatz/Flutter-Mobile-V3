@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter_form/changeNotifier/formNotifier.dart';
 // import 'package:flutter_form/constant/Constant.dart';
-import 'package:flutter_form_remake/constant/Constant.dart';
-import 'package:flutter_form_remake/widgets/errorCustomRegistrationAnimation.dart';
+import 'package:flutter_form_remake/constant/constant.dart';
+import 'package:flutter_form_remake/widgets/error_custom_registration_animation.dart';
 import 'package:intl/intl.dart';
 // import 'package:flutter_form/widgets/errorCustomRegistrationAnimation.dart';
 
@@ -58,15 +58,8 @@ class _RegisterFormState extends State<RegisterForm> {
         child: ListView(
           shrinkWrap: true,
           children: <Widget>[
-            // SizedBox(height: 60),
-            Container(
-              height: 50,
-              child: Text(
-                'Register',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-            ),
+            SizedBox(height: 50),
+            _buildFormTitle(),
             SizedBox(height: 15),
             _buildName(),
             buildCustomErrorWidgetOfType(nameError, _isNameErrorActive),
@@ -85,6 +78,14 @@ class _RegisterFormState extends State<RegisterForm> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildFormTitle() {
+    return Text(
+      'Register',
+      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      textAlign: TextAlign.center,
     );
   }
 
@@ -343,7 +344,7 @@ class _RegisterFormState extends State<RegisterForm> {
             padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1 / 2),
             decoration: BoxDecoration(
                 color: _isCustomBirthdayErrorActive
-                    ? Color(0xFFbd1f36)
+                    ? warningColor
                     : Colors.transparent, //Color(0xFFa01a58),
                 border: Border.all(style: BorderStyle.none),
                 borderRadius: BorderRadius.all(Radius.circular(30))),

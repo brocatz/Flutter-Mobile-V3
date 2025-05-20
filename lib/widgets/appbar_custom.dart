@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/changeNotifier/cartNotifier.dart';
+import 'package:flutter_form_remake/changeNotifier/cart_notifier.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:flutter_form_remake/constant/Constant.dart';
+import 'package:flutter_form_remake/constant/constant.dart';
 
 import 'package:provider/provider.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/constant/Constant.dart';
+import 'package:flutter_form_remake/constant/constant.dart';
 import 'package:flutter_form_remake/screens/main_interface.dart';
 import 'package:sign_button/sign_button.dart';
 import 'dart:io';
