@@ -10,6 +10,7 @@ const Color discoverMenuItemBackgroundColor =
 const Color warningColor = Color(0xFFbd1f36);
 
 const Color cartTitleColor = Color(0xFFf1dca7);
+const Color textDarkColor = Color.fromRGBO(32, 32, 32, 1);
 
 // Text Color
 

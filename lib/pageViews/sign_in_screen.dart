@@ -10,8 +10,11 @@ import 'dart:io';
 
 // This is in the pageView
 class SignIn extends StatefulWidget {
+  const SignIn({super.key});
+
+  // _SignInState createState() => _SignInState();
   @override
-  _SignInState createState() => _SignInState();
+  State<SignIn> createState() => _SignInState();
 }
 
 class _SignInState extends State<SignIn> {
@@ -190,7 +193,7 @@ class _SignInState extends State<SignIn> {
       });
 
   Widget _buildLostPassword() => InkWell(
-        onTap: () {},
+        onTap: () async {},
         child: Text(
           "Lost Password ?",
           style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_form_remake/constant/constant.dart';
 
 Widget buildCustomErrorWidgetOfType(
     String? errorMessage, bool isErrorOfTypeActive) {
@@ -14,7 +15,7 @@ Widget buildCustomErrorWidgetOfType(
         padding: EdgeInsets.symmetric(horizontal: 10, vertical: 1 / 2),
         decoration: BoxDecoration(
             color: isErrorOfTypeActive
-                ? Color(0xFFbd1f36)
+                ? warningColor
                 : Colors.transparent, //Color(0xFFa01a58),
             border: Border.all(style: BorderStyle.none),
             borderRadius: BorderRadius.all(Radius.circular(30))),

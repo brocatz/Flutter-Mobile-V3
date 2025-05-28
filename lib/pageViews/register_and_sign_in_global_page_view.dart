@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_form_remake/changeNotifier/form_botifier.dart';
+import 'package:flutter_form_remake/changeNotifier/form_notifier.dart';
+import 'package:flutter_form_remake/pageViews/pre_register_screen.dart';
 import 'package:flutter_form_remake/pageViews/register_screen.dart';
 import 'package:flutter_form_remake/pageViews/register_screen_part2.dart';
 import 'package:flutter_form_remake/pageViews/sign_in_screen.dart';
@@ -30,6 +31,8 @@ class RegisterAndSignInGlobalPageView extends StatelessWidget {
                 // _application(RegisterForm(formNotifier: formNotifier)),
                 _application(RegisterForm()),
                 _application(RegisterFormPart2()),
+                //Currently testing this section
+                _application(PreRegisterForm()),
               ],
             ),
             _application(SignIn())

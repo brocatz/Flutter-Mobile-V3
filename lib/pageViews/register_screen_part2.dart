@@ -5,6 +5,8 @@ import 'package:flutter_form_remake/widgets/error_custom_registration_animation.
 import 'package:toggle_switch/toggle_switch.dart';
 
 class RegisterFormPart2 extends StatefulWidget {
+  const RegisterFormPart2({super.key});
+
   @override
   // _RegisterFormPart2State createState() => _RegisterFormPart2State();
   State<RegisterFormPart2> createState() => _RegisterFormPart2State();
@@ -268,10 +270,7 @@ class _RegisterFormPart2State extends State<RegisterFormPart2> {
           ))),
       child: Text(
         'Register',
-        style: TextStyle(
-          fontSize: 16.0,
-          color: Colors.black,
-        ),
+        style: TextStyle(fontSize: 16.0, color: textDarkColor),
       ),
       onPressed: () async {
         if (!_formKey.currentState!.validate()) return;

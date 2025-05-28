@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_form_remake/changeNotifier/cart_notifier.dart';
-import 'package:flutter_form_remake/changeNotifier/form_botifier.dart';
+import 'package:flutter_form_remake/changeNotifier/form_notifier.dart';
 import 'package:flutter_form_remake/pageViews/register_and_sign_in_global_page_view.dart';
-import 'package:flutter_form_remake/pageViews/sign_in_screen.dart';
+// import 'package:flutter_form_remake/pageViews/sign_in_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -15,6 +16,7 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+
   runApp(const MyApp());
 }
 
