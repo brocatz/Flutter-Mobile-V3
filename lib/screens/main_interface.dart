@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_remake/changeNotifier/page_view_change_notifier.dart';
 import 'package:flutter_form_remake/pageViews/home_page_view.dart';
-import 'package:flutter_form_remake/pageViews/order_page_view.dart';
+import 'package:flutter_form_remake/pageViews/message_page_view.dart';
 import 'package:flutter_form_remake/pageViews/search_page_view.dart';
 import 'package:flutter_form_remake/widgets/appbar_custom.dart';
 import 'package:flutter_form_remake/widgets/bottom_navigation_bar.dart';
@@ -83,7 +83,7 @@ class _MainInterfaceState extends State<MainInterfaceScreen> {
         children: <Widget>[
           HomePageView(),
           SearchPageView(),
-          OrderPageView(),
+          MessagePageView(),
         ],
       );
     });

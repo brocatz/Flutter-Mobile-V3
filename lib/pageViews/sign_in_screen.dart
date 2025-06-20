@@ -63,16 +63,12 @@ class _SignInState extends State<SignIn> {
                       ],
                     ),
                   ],
-                ),
-                Positioned(
-                  bottom: -60,
-                  left: 0,
-                  right: 0,
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [_buildLostPassword()]),
                 )
               ]),
+          SizedBox(height: 35),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [_buildLostPassword()])
         ],
       ),
     );
@@ -193,7 +189,9 @@ class _SignInState extends State<SignIn> {
       });
 
   Widget _buildLostPassword() => InkWell(
-        onTap: () async {},
+        onTap: () async {
+          print("_buidLostPassowrd");
+        },
         child: Text(
           "Lost Password ?",
           style: TextStyle(

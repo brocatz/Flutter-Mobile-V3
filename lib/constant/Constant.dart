@@ -2,7 +2,7 @@ import 'dart:ui';
 
 // Not the value of the color
 // It's the color object itself we are passing
-const Color primaryColor = Color(0xFF1d2d44); // Dark Blue Color
+const Color primaryColor = Color.fromRGBO(29, 45, 68, 1); // Dark Blue Color
 const Color backgroundColor = Color.fromRGBO(32, 32, 32, .5); // black
 const Color formButtonColor = Color.fromRGBO(144, 190, 109, 1); // Ligth Green
 const Color discoverMenuItemBackgroundColor =

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_remake/changeNotifier/form_notifier.dart';
-import 'package:flutter_form_remake/pageViews/pre_register_screen.dart';
 import 'package:flutter_form_remake/pageViews/register_screen.dart';
-import 'package:flutter_form_remake/pageViews/register_screen_part2.dart';
+import 'package:flutter_form_remake/pageViews/register_screen_part_2.dart';
+import 'package:flutter_form_remake/pageViews/register_screen_part_3.dart';
 import 'package:flutter_form_remake/pageViews/sign_in_screen.dart';
 import 'package:provider/provider.dart';
 // import 'package:flutter_form/changeNotifier/formNotifier.dart';
@@ -31,8 +31,7 @@ class RegisterAndSignInGlobalPageView extends StatelessWidget {
                 // _application(RegisterForm(formNotifier: formNotifier)),
                 _application(RegisterForm()),
                 _application(RegisterFormPart2()),
-                //Currently testing this section
-                _application(PreRegisterForm()),
+                _application(RegisterFormPart3()),
               ],
             ),
             _application(SignIn())
@@ -48,7 +47,7 @@ class RegisterAndSignInGlobalPageView extends StatelessWidget {
       child: SafeArea(
         child: Container(
           decoration: BoxDecoration(
-            color: Color(0xFF618985),
+            color: Color.fromRGBO(97, 137, 133, 1),
             borderRadius: BorderRadius.all(Radius.circular(30)),
             boxShadow: [
               BoxShadow(

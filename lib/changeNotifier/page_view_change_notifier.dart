@@ -11,7 +11,7 @@ class PageViewChangeNotifier with ChangeNotifier {
   int currentPage = 0;
   PageController pageController = PageController(initialPage: 0);
 
-  List<String> appBarTitle = ['Discover', 'Search', 'Order'];
+  List<String> appBarTitle = ['Discover', 'Search', 'Message'];
 
   int get currentViewPage => currentPage;
   PageController get getCurrentPageController => pageController;

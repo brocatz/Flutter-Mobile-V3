@@ -24,8 +24,8 @@ class CustomBottomNavigationBar extends StatelessWidget {
             icon: Icon(Icons.search),
           ),
           BottomNavigationBarItem(
-            label: 'Orders',
-            icon: Icon(Icons.food_bank),
+            label: 'Message',
+            icon: Icon(Icons.message_rounded),
           ),
         ],
         onTap: (index) {
